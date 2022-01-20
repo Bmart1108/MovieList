@@ -1,0 +1,24 @@
+/*Adds numbers to ordered list-COUNTER FOR APPS (OL and LI*/
+.blue-background-class{
+    background-color: lightblue ;
+}
+
+
+ol {
+    list-style: none;
+    counter-reset: my-counter;
+}
+
+ol li{
+    counter-increment: my-counter;
+}
+
+ol li::before{
+    content: counter(my-counter) "  .   ";
+    color: red;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-right: .2em;
+    margin-top: auto
+}
